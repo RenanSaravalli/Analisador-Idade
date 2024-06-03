@@ -16,35 +16,35 @@ function verificar() {
             gênero = 'Homem'
             if (idade >= 0 && idade < 10) {
                 //criança
-                img.setAttribute('src', 'foto-crianca-menino.png')
+                img.setAttribute('src', 'imagem/foto-crianca-menino.png')
             } else if (idade < 21) {
                 //jovem
-                img.setAttribute('src', 'foto-jovem-homem.png')
+                img.setAttribute('src', 'imagem/foto-jovem-homem.png')
             } else if (idade < 50) {
                 //adulto
-                img.setAttribute('src', 'foto-adulto-homem.png')
+                img.setAttribute('src', 'imagem/foto-adulto-homem.png')
             } else {
                 //idoso
-                img.setAttribute('src', 'foto-velho.png')
+                img.setAttribute('src', 'imagem/foto-velho.png')
             }
         } else if (fsex[1].checked) {
             gênero = 'Mulher'
             if (idade >= 0 && idade < 10) {
                 //criança
-                img.setAttribute('src', 'foto-crianca-menina.png')
+                img.setAttribute('src', 'imagem/foto-crianca-menina.png')
             } else if (idade < 21) {
                 //jovem
-                img.setAttribute('src', 'foto-jovem-mulher.png')
+                img.setAttribute('src', 'imagem/foto-jovem-mulher.png')
             } else if (idade < 50) {
                 //adulto
-                img.setAttribute('src', 'foto-adulta-mulher.png')
+                img.setAttribute('src', 'imagem/foto-adulta-mulher.png')
             } else {
                 //idoso
-                img.setAttribute('src', 'foto-velha.png')
-                }
+                img.setAttribute('src', 'imagem/foto-velha.png')
             }
-            res.style.textAlign = 'center'
-            res.innerHTML = `Detectamos ${gênero} com ${idade} anos`
-            res.appendChild(img)
+        }
+        res.style.textAlign = 'center'
+        res.innerHTML = `Detectamos ${gênero} com ${idade} anos`
+        res.appendChild(img)
     }
 }
